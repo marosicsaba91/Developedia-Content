@@ -15,19 +15,19 @@
         meta.name = 'viewport';
         meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
         document.getElementsByTagName('head')[0].appendChild(meta);
-    
+
         var canvas = document.querySelector("#unity-canvas");
         canvas.style.width = "100%";
         canvas.style.height = "100%";
         canvas.style.position = "fixed";
-    
+
         document.body.style.textAlign = "left";
       }
-    
-		createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/Build.data.gz",
-        frameworkUrl: "Build/Build.framework.js.gz",
-        codeUrl: "Build/Build.wasm.gz",
+
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Build.data",
+        frameworkUrl: "Build/Build.framework.js",
+        codeUrl: "Build/Build.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "UnityUtilities",
